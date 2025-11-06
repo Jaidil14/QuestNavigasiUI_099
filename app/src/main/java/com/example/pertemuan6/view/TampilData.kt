@@ -32,9 +32,9 @@ fun TampilData(
     onBackBtnClick: () -> Unit
 ){
     val items = listOf(
-        Pair(stringResource(id = R.string.nama_lengkap), "Contoh Nama"),
-        Pair(stringResource(id = R.string.jenis_kelamin), "Lainnya"),
-        Pair(stringResource(id = R.string.alamat), "Alamat"),
+        Pair(stringResource(id = R.string.nama_lengkap), "Roni Sayang"),
+        Pair(stringResource(id = R.string.jenis_kelamin), "Lady Boy"),
+        Pair(stringResource(id = R.string.alamat), "Thailand"),
     )
     Scaffold(modifier = Modifier,
         {
@@ -62,12 +62,12 @@ fun TampilData(
                         )
                         HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
                     }
-                    Spacer(modifier = Modifier.height(10.dp))
-                    Button(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = onBackBtnClick) {
-                        Text(text = stringResource(id = R.string.back))
-                    }
+                }
+                Spacer(modifier = Modifier.height(10.dp))
+                Button(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = onBackBtnClick) {
+                    Text(text = stringResource(id = R.string.back))
                 }
             }
         }
