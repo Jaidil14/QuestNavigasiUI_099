@@ -95,7 +95,6 @@ fun FormIsian(
             ) {
                 Text(stringResource(id = R.string.submit))
             }
-
         }
     }
 }
