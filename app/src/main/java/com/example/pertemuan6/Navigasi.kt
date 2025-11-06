@@ -45,3 +45,9 @@ fun DataApp(
         }
     }
 }
+private fun cancelAndBackToFormulirKu(
+    navController: NavHostController
+) {
+    navController.popBackStack(Navigasi.FormulirKu.name,
+        inclusive = false)
+}
